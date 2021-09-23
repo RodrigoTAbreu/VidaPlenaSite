@@ -8,11 +8,23 @@
 </head>
 <body>
     <h1>
-        Usando links esternos.
+        Usando links externos e internos.
     </h1>
-    <!--sempre que for link exter no recomendado é que usemos o TAGET para ele direcionar para uma nova página.(_blank) o rel é (relacionado)-->
+    <!--sempre que for link externo recomendado é que usemos o TAGET para ele direcionar para uma nova página.(_blank) o rel é (relacionado)-->
     <p>Você pode acessar o meu <a href="https://github.com/RodrigoTAbreu" target="_blank" rel="external">repositório público no GIT HUB</a></p>
     <p>Você também pode acessar um <a href="http://youtube.com" target="_blank" rel="external">link no YouTube</a></p>
-    
+    <h2>Usando Link Interno.</h2>
+    <p>Esta é a primeira página. Acesse a <a href="pag02.html" rel="next" target="_self">segunda página</a></p>
+    <p>Esta página é um oferecimento da <a href="https://hostnet.com.br" target="_blank" rel="nofollow">HOSTNET</a></p>
+    <!--quando usamos REL="nofollow" significa que para o buscador você não dá seu aval ou seja ela não siga quando houver buscas. a opção SELF significa na própria aba.-->
+    <p>Acesse a página de <a href="noticias/pag003.htm" rel="next" target="_self">Notícias</a></p>
+    <h1>
+        Link para downloads
+    </h1>
+    <ul><!--usando a tag A de link usamos a opção DOWNLOAD  e o nome do arquivo para ser baixado.-->
+        <li><a href="livro/Profile.pdf" download="Profile.pdf" >Livro para Baixar</a></li>
+        <li><a href="livro/Profile.pdf.tar.gz" download="Profile.pdf.tar.gz">Livro em ZIP</a></li>
+    </ul>
+
 </body>
 </html>
