@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Audio</title>
+</head>
+<body>
+    <h1>Reproduzindo Audio no Site com HTML</h1>
+    <p>Vamos aprender a reproduzir audios.</p>
+    <!-- podemos colocar o audio conforme a tag audio abaixo -->
+  <!--  <audio src="../media/Vamos.mp3" controls autoplay></audio>-->
+    <!--formatos: MP3 WAV OGG-->
+    <!--ou podemos carregar o aqudio com as opções abaixo-->
+    <audio preload="metadata" autoplay controls>
+        <source src="../media/guanacast-33.mp3" type="audio/mpeg"><!--navegador tenta carregar primeiro esse-->
+        <source src="../media/guanacast-33.ogg" type="audio/ogg"><!--em segundo esse-->
+        <source src="../media/guanacast-33.wav" type="audio/wav"><!--em terceiro esse-->
+        <!--caso não consiga carregar nenhum dos arquivos anteriores mostra a msg abaixo-->
+        <p>Infelizmente seu navegador não é compatível com o tipo de mídia a ser executada. Tente baixar</p>
+        <a href="../media/guanacast-33.mp3">Baixe o arquivo Aqui.</a>
+    </audio>
+    
+</body>
+</html>
