@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 07</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>
+        Você está vendo a imagem completa? Experimente ampliar o tamanho de sua janela para aproveitar a melhor experiência.
+    </p>
+    <!---Primeiro inserimos a tag PICTURE-->
+    <picture> 
+        <!--insere a imagem a ser carregada por padrão no caso a "G"-->
+        <!--em seguida a tag SOURCE media Type-->
+        <!--Mudamos min-width para max-width-->
+        <!--indicamos o caminho da imagem a ser carregada / tamanho 1050px q é a MEDIA  / o passo se repete para a imagem P ou menores ainda-->
+    
+        <source media="(max-width:750px )" srcset="paisagem-p.png" type="image/png"><!--essa é a imagem pequena-->
+        <source media="(max-width:1050px )" srcset="paisagem-m.png" type="image/png"><!--essa é a foto media-->
+        <img src="paisagem-g.png" alt="Praia"> <!-- essa é a foto grande-->
+    </picture>
+    <P><a href="../index.html" rel="prev" target="_self">VOLTAR</a></P>
+
+</body>
+</html>
