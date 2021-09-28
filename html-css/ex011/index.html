@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Midas HMTL5</title>
+</head>
+<body>
+    <h1>Trabalhando com Imagens Responsivas.</h1>
+    <p>Abra em dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="/img/favicon.png" type="image/png"> <!--Definido aqui a imagem que vai ser carregado quando o tamanho for no máximo 750px / max-width é a largura da imagem-->
+        <source media="(max-width:1000px)" srcset="/img/bible1.jpg" type="image/png"> <!---Aqui muda de imagem PADRÃO que vai ser carregada no site primeiro --- quando o tamanho for 1000px-->
+        <img src="/img/praia-980.png" alt="Imagem Flexivel">
+    </picture>
+
+    
+</body>
+</html>

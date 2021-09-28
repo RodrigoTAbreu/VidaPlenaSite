@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Vamos aprender a trabalhar com Vídeo</h1>
+    <p>Este video está hospedado em meu servidor.</p>
+    <!--abaixo a forma mais simples de se colocar um video-->
+<!--    <video src="media/meu-video.webm" width="500" controls></video>
+-->
+   <video autoplay loop controls width="560" poster="imagem/capa.png"> <!--inserimos a tag video com os controles tamanho de 500 e com a capa do video em poster   -->
+       <source src="media/meu-video.m4v" type="video/mp4"><!--carrega primeiro-->
+       <source src="media/meu-video.mp4" type="video/mp4"><!--carrega segundo-->
+       <source src="media/meu-video.webm" type="video/webm"><!--carrega terceiro-->
+       <p>Seu navegador é incompatível</p>
+
+   </video> 
+
+   <h1>Inserindo Videos do Youtube</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <p></p>
+   <h1>Outro video agora do VIMEO</h1>
+   <iframe src="https://player.vimeo.com/video/413281145?h=08545affd6&color=ff0179&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+   <h1>Teste de video da Igreja</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/fgtq0tTwTHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

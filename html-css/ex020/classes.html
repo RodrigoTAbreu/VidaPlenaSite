@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: gray;
+            border: 3px solid black;
+            text-align: center;
+            height: 200px; /*altura*/
+            width: 200px; /*largura*/
+        }
+        
+        div:hover{
+            background-color: chartreuse;
+            transition: 0.5s ease-in;
+            display: inline-block;
+            border: 3px solid black;
+            text-align: center;
+
+        }
+        div > p{/* o paragrafo p é filho da DIV*/
+            display: none; /* não mostra o texto*/
+        }
+        div:hover > p{ /* o paragrafo p é filho da DIV*/
+            display: block; /*mostra o texto*/
+            color: darkblue;
+            background-color: darkorange;
+         
+           
+        }
+       
+     
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <div>01
+        <p>Quadro 01</p>
+    </div>
+    <div>02
+        <p>Quadro 02</p>
+    </div>
+    <div>03
+        <p>Quadro 03</p>
+    </div>
+    <p></p>
+    <div>01
+        <p>Quadro 04</p>
+    </div>
+    <div>02
+        <p>Quadro 05</p>
+    </div>
+    <div>03
+        <p>Quadro 06</p>
+    </div>
+    <!---
+    <h1>Exemplo de Hover</h1>
+    <div>
+        Passe o mouse aqui
+        <p>Você passou o mouse...</p>
+    </div>
+    <p>
+        Fim do Exemplo
+    </p>
+    -->
+</body>
+</html>
