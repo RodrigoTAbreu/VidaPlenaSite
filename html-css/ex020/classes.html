@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classes</title>
     <style>
+        /* Seletores personalizados
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children (filho)
+        */
         div{
             display: inline-block;
             background-color: gray;
@@ -15,7 +22,7 @@
             width: 200px; /*largura*/
         }
         
-        div:hover{
+        div:hover{/*Pseudo classe quando o mouse passar por cima*/
             background-color: chartreuse;
             transition: 0.5s ease-in;
             display: inline-block;
@@ -29,12 +36,52 @@
         div:hover > p{ /* o paragrafo p é filho da DIV*/
             display: block; /*mostra o texto*/
             color: darkblue;
-            background-color: darkorange;
-         
-           
+            background-color: darkorange;  
         }
-       
-     
+        /*Pseudo Classes para link a*/
+        a{
+            color: blueviolet; /* cor da font*/
+            text-decoration: none; /*linha abaixo */
+            font-weight: bold; /*negrito*/
+        }
+        a:visited{
+            color:darkblue;
+
+        }
+        a:hover{
+            color:chocolate;
+            text-decoration: underline;
+        }
+        a:active{
+            color: greenyellow;
+        }
+
+       /*Pseudo Elementos são identificados por :: e pseudo classe por :*/
+        a::before{ /*Depois do link faça essa configuração*/
+            content: '=>';
+            color: grey;
+        }
+
+        a::after{ /*após o link faça essa configuração*/
+
+           content: "<=";
+           text-decoration: none;
+           font-weight: normal;
+           color: grey;
+       }
+     /*Podemos combinar pseudo classe com id ou class*/
+       .especial{
+           background-color: rgba(76, 0, 130, 0.658);
+       }
+       .especial::before{
+           color: white;
+           content: "-->>";
+       }
+       .especial::after{
+           color: white;
+           content: "<<--";
+       }
+
 
     </style>
 </head>
@@ -59,7 +106,7 @@
     <div>03
         <p>Quadro 06</p>
     </div>
-    <!---
+    
     <h1>Exemplo de Hover</h1>
     <div>
         Passe o mouse aqui
@@ -68,6 +115,13 @@
     <p>
         Fim do Exemplo
     </p>
-    -->
+    <h1>Outros Exemplos de Pseudo Classes</h1>
+    <ul>
+        <li><a href="https://github.com/RodrigoTAbreu" target="_blank">GitHub</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial">Youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/rodrigo-telles/" target="_blank">LinkedIn</a></li>
+
+    </ul>
+
 </body>
 </html>
