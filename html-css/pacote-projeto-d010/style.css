@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "android";
+    src: url("../pacote-projeto-d010/fontes/idroid.otf");
+}
+
+body{
+    align-items: center;
+    background-color: rgba(47, 131, 47, 0.514) ;
+}
+
+header{
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(47, 131, 47);
+}
+
+main{
+    align-items: baseline;
+    border-radius: 10px;
+    margin:1px 250px 30px 250px;
+    background-color: white;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+header > h2{
+    color: white;
+    text-align: center;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
+h2#mascote{
+    text-align: left;
+    color: rgb(47, 131, 47);
+    font-family: android, sans-serif;
+}
+h3#versao{
+    color: rgb(47, 131, 47);
+    background-color: rgba(56, 136, 56, 0.377);
+    font-family: android, sans-serif;
+}
+h3#novo{
+    color: rgb(47, 131, 47);
+    background-color: rgba(56, 136, 56, 0.377);
+    font-family: android, sans-serif;
+}
+section#aprendemais{
+    border-radius: 10px;
+    padding: 0px 6px 5px 10px;
+    margin: auto;
+    background-color: rgba(47, 131, 47, 0.363);
+}
+section > h3{
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(47, 131, 47, 0.87);
+}
+h3#mais{
+    margin: 0px;
+    color: rgb(240, 247, 240);
+    background-color: rgba(47, 114, 47, 0.753);
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color:rgb(47, 131, 47);
+}
