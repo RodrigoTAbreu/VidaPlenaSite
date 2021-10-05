@@ -5,7 +5,6 @@
 }
 
 body{
-    align-items: center;
     background-color: rgba(47, 131, 47, 0.514) ;
 }
 
@@ -53,9 +52,10 @@ h3#novo{
 }
 section#aprendemais{
     border-radius: 10px;
-    padding: 0px 6px 5px 10px;
-    margin: auto;
+    box-shadow: 10px 5px 1px black;
+    margin: 10px;
     background-color: rgba(47, 131, 47, 0.363);
+    box-shadow: teal;
 }
 section > h3{
     border-radius: 10px;
