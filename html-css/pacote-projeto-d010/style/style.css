@@ -2,16 +2,22 @@
 @font-face {
     font-family: "android";
     src: url("../pacote-projeto-d010/fontes/idroid.otf");
+    src: url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+  
 }
 
 body{
-    background-color: rgba(47, 131, 47, 0.514) ;
+    font-family: Bebas;
+    background-color: #c5ebd6;
 }
 
 header{
     margin: 0px;
     padding: 10px;
-    background-color: rgb(47, 131, 47);
+    background-color: #3dd884;
+}
+nav >a:hover {
+    text-decoration: underline;
 }
 
 main{
