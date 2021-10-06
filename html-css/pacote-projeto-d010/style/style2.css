@@ -29,6 +29,11 @@
     --fonte-android: "Android", cursive;
 }
 
+*{ /* aqui definimos as configurações GLOBAIS para todos os elementos do site. Iniciamos com '*' asteristo e depois definimos as margens*/
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrão);
