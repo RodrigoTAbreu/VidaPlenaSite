@@ -38,6 +38,34 @@ body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrão);
 }
+
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;/*Recuo da primeira linha */
+    font-size: 1em;
+    line-height: 1em;/*altura entre linhas*/
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 2px 6px;
+
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3)
+}
+
+
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -101,12 +129,25 @@ main h1 {
     color: var(--cor3)
 }
 main h2{
+    color: var(--cor4);
     font-family: var(--fonte-android);
 }
+main h3{
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    
+}
 
-img{
+ main img{
 
     width: 100%;
+}
+main img#pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
 
 footer{
